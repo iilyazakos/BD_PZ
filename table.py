@@ -8,4 +8,4 @@ st.title('Table')
 st.write(data)
 
 if st.button('Table with calculated values'):
-    webbrowser.open_new_tab('https://iilyazakos-bd-pz-app-table-5sk2b1.streamlit.app')
+    webbrowser.open(f'https://iilyazakos-bd-pz-app-table-5sk2b1.streamlit.app')
