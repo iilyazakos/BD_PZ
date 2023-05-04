@@ -25,3 +25,6 @@ data = data.append(sums, ignore_index=True)
 finish = pd.Series([str('Result:'), round((f+s+data["delivery(rub)"].sum()), 2),"", "", "", "", "", "", ""], index=data.columns)
 data = data.append(finish, ignore_index=True)
 st.write(data)
+
+if st.button('Table with calculated values'):
+    webbrowser.open_new_tab('https://iilyazakos-bd-pz-table-5vxp5y.streamlit.app/')
