@@ -29,6 +29,6 @@ sums = pd.Series(["", str('Amount:'), data["avg"].sum(),
                  index=data.columns)
 
 data = data.append(sums, ignore_index=True)
-finish = pd.Series([" ", str('Result:'), round((f+s+data["delivery(rub)"].sum()), 2), " ", " ", " ", " ", " ", " " ], index=data.columns)
+finish = pd.Series(["", str('Result:'), round((f+s+data["delivery(rub)"].sum()), 2), "", "", "", "", "", ""], index=data.columns)
 data = data.append(finish, ignore_index=True)
 st.write(data)
