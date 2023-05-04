@@ -9,7 +9,6 @@ st.write(data)
 
 if st.button('Table with calculated values'):
     js = "window.open('https://iilyazakos-bd-pz-app-table-5sk2b1.streamlit.app/')"  # New tab or window
-    js = "window.location.href = 'https://iilyazakos-bd-pz-app-table-5sk2b1.streamlit.app/'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
