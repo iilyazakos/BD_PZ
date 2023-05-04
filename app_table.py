@@ -27,7 +27,7 @@ data = data.append(finish, ignore_index=True)
 st.write(data)
 
 if st.button('Return to original page'):
-    js = "window.open(https://iilyazakos-bd-pz-table-5vxp5y.streamlit.app/)"  # New tab or window
+    js = "window.open('https://iilyazakos-bd-pz-table-5vxp5y.streamlit.app/')"  # New tab or window
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
