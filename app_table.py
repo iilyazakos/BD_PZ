@@ -14,7 +14,7 @@ for i in range(0, 7):
 
 data['avg_cost'] = data['avg'] * data['cost(rub)']
 data['price(rub)'] = round((data['avg_cost']*(1+data['tax'])+data['delivery(rub)']), 2)
-sums = pd.Series(["", str('Amount:'), data["avg"].sum(),
+sums = pd.Series([str('Amount:'), "", data["avg"].sum(),
                   f,
                   "", round(s, 2),
                   data["delivery(rub)"].sum(),
@@ -22,6 +22,6 @@ sums = pd.Series(["", str('Amount:'), data["avg"].sum(),
                  index=data.columns)
 
 data = data.append(sums, ignore_index=True)
-finish = pd.Series(["", str('Result:'), round((f+s+data["delivery(rub)"].sum()), 2), "", "", "", "", "", ""], index=data.columns)
+finish = pd.Series([str('Result:'), round((f+s+data["delivery(rub)"].sum()), 2),"", "", "", "", "", "", ""], index=data.columns)
 data = data.append(finish, ignore_index=True)
 st.write(data)
