@@ -28,7 +28,6 @@ st.write(data)
 
 if st.button('Return to original page'):
     js = "window.open(https://iilyazakos-bd-pz-table-5vxp5y.streamlit.app/)"  # New tab or window
-    js = "window.location.href = https://iilyazakos-bd-pz-table-5vxp5y.streamlit.app/"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
