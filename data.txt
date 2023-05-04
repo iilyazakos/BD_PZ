@@ -1,0 +1,8 @@
+id, name, avg, cost(rub), country, tax, delivery(rub)
+342, iphone, 1, 60000, rus, 0.06, 700
+212, playstation, 1, 55000, usa, 0.1, 1500
+145, pen, 3, 80, uk, 0.08, 156
+422, glass, 2, 1789, uk, 0.08, 345
+543, notebook, 1, 87999, chi, 0.07, 875
+134, table, 2, 11000, rus, 0.06, 1700
+124, shirts, 4, 5000, uk, 0.08, 400
