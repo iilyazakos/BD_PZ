@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from bokeh.models.widgets import Div
 
-data = pd.read_csv('https://github.com/iilyazakos/BD_PZ/blob/1984c0a0978133d4667c87880a1a4feb719c2922/data.txt?raw=true', sep=", ")
+data = pd.read_csv('https://github.com/iilyazakos/BD_PZ/blob/8a77a5424b1cec286c1dd1b7817de9e5f8cd7ea4/data.txt?raw=true', sep=", ")
 st.set_page_config(layout = "wide")
 st.title('Table with calculated values')
 s = 0
