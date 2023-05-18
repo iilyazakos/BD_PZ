@@ -14,7 +14,7 @@ for i in range(0, 7):
 
 data['avg_cost'] = data['avg'] * data['cost(rub)']
 data['price(rub)'] = round((data['avg_cost']*(1+data['tax'])+data['delivery(rub)']), 2)
-sums = pd.DataFrame([[str('Amount:'), "", data["avg"].sum(), f, "", round(s, 2), data["delivery(rub)"].sum(),"", ""]], columns=data.columns)
+sums = pd.DataFrame([[str('Amount:'), "", data["avg"].sum(), "", "", round(s, 2), data["delivery(rub)"].sum(),f, ""]], columns=data.columns)
 
 
 data = pd.concat([data, sums])
